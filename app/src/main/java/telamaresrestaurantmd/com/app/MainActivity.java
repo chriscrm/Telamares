@@ -17,6 +17,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import telamaresrestaurantmd.com.app.fragments.AppetizersFragment;
+import telamaresrestaurantmd.com.app.fragments.MeatsFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -97,6 +98,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_meats:
                 Toast.makeText(this, "Meats Menu", Toast.LENGTH_SHORT).show();
+                fragment = MeatsFragment.class;
+                showFragment(fragment);
                 break;
             case R.id.nav_togo:
                 Toast.makeText(this, "ToGo Menu", Toast.LENGTH_SHORT).show();
